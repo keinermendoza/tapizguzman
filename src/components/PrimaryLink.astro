@@ -1,0 +1,48 @@
+---
+const {to, className} = Astro.props; 
+---
+<a href={to} class={`button-primary text-xl ${className ? className : ''}`}><slot/></a>
+
+<style>
+/* CSS */
+/* copied from https://getcssscan.com/css-buttons-examples */
+.button-primary {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: hsl(44, 100%, 47%);
+  border: 1px solid transparent;
+  border-radius: .65rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 600;
+  justify-content: center;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-primary:hover {
+  transform: translateY(-1px);
+}
+
+.button-primary:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+</style>

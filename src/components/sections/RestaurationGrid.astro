@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+import Muebles from "../../assets/restauracion-muebles.png" 
+import SquareDots from "../SquareDots.astro";
+import PrimaryLink from '../PrimaryLink.astro';
+
+---
+
+<section class="relative w-full py-6 px-4 md:py-12 md:px-8 mx-auto max-w-7xl flex gap-x-6 gap-y-4 items-center lg:items-start flex-col lg:flex-row justify-between">
+
+
+    <div class="max-w-xl relative">
+        <SquareDots className="absolute -top-20 -left-20 size-60" color="#90A1B9" />  
+        <Image 
+        class="rounded-lg z-10 relative"
+        width="593"
+        height="567"
+        src={Muebles} 
+        alt="Comparación del antes y después de diferentes clases de muebles restaurados" />
+    </div>
+
+    <div class="max-w-lg">
+        <h3 class="text-3xl mb-4 font-semibold">Somos Maestros de la Restauración</h3>
+        <p class=" mb-4">
+            La restauración de muebles es un arte que requiere paciencia, precisión y un profundo respeto por la historia de cada pieza. 
+        </p>
+        <p class=" mb-8">
+            Cada pieza restaurada no solo recupera su funcionalidad y belleza, sino que también conserva su esencia original, rescatando los detalles y la identidad que la hacen única. Gracias a la combinación de técnicas tradicionales con acabados modernos logramos resultados impecables, permitiendo que cada mueble cuente una nueva historia sin perder su alma.
+        </p>
+        
+        <div class="flex justify-center lg:justify-start">
+            <PrimaryLink to="https://wa.me/593978845747?text=hola%2C%20vengo%20de%20su%20sitio%20web.%20Tengo%20un%20mueble%20que%20quiero%20restaurar%20con%20ustedes." >Quiero una Restauración</PrimaryLink> 
+        </div>
+
+    </div>
+</section>

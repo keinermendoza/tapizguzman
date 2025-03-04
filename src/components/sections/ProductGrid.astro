@@ -1,0 +1,75 @@
+---
+import Image from "astro/components/Image.astro";
+import ProductCard from "../ProductCard.astro";
+import CAmarillo from "../../assets/conjuntos/conjunto-amarillo.png";
+import CAzul from "../../assets/conjuntos/conjunto-azul.png";
+import CRojo from "../../assets/conjuntos/conjunto-rojo.png";
+import CamaGris from "../../assets/camas/cama-gris.png";
+import CamaVerde from "../../assets/camas/cama-verde.png";
+
+---
+
+<section class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4 py-6 px-4 md:py-12 md:px-8 w-full mx-auto max-w-7xl">
+    <div class="bg-slate-300 p-6 shadow-xl  grid place-content-center h-full rounded-xl  dark:bg-gray-800 dark:border-gray-700">
+        <p class="text-6xl mb-4 font-semibold">+100</p>
+        <p class="text-lg">Clientes satisfechos con nuestros productos de primera calidad</p>
+    </div>
+
+    <ProductCard
+        title="Diseño y Fabricación"
+        price="$90"
+        >
+        <Fragment slot="image">
+            <Image 
+                src={CAmarillo}
+                alt="conjunto de muebles amarillos"
+            />
+        </Fragment>
+    </ProductCard>   
+    <ProductCard
+    title="Diseño y Fabricación"
+    price="$90"
+    >
+        <Fragment slot="image">
+            <Image 
+                src={CRojo}
+                alt="conjunto de muebles rojos"
+            />
+        </Fragment>
+    </ProductCard>   
+    <ProductCard
+    title="Diseño y Fabricación"
+    price="$90"
+    >
+        <Fragment slot="image">
+            <Image 
+                src={CAzul}
+                alt="conjunto de muebles azules"
+            />
+        </Fragment>
+    </ProductCard>   
+    <ProductCard
+    title="Diseño y Fabricación"
+    price="$120"
+    >
+        <Fragment slot="image">
+            <Image 
+                src={CamaGris}
+                alt="cama matrimonial gris"
+            />
+        </Fragment>
+    </ProductCard>   
+    <ProductCard
+    title="Diseño y Fabricación"
+    price="$120"
+    >
+        <Fragment slot="image">
+            <Image 
+                src={CamaVerde}
+                alt="cama matrimonial verde"
+            />
+        </Fragment>
+    </ProductCard>   
+</section>
+
+

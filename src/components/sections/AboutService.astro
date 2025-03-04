@@ -1,0 +1,87 @@
+---
+import SquareDots from "../SquareDots.astro";
+import Image from "astro/components/Image.astro";
+import VendorCard from '../VendorCard.astro';
+import MuebleSalaEspera from "../../assets/mueble-sala-espera.jpeg"
+import ReasonMiniCard from "../ReasonMiniCard.astro"
+
+---
+<!-- <SquareDots colorDots="red"  /> -->
+<section class="relative w-full items-center py-6 px-4 lg:py-12 lg:px-8 mx-auto max-w-7xl gap-4 flex flex-col lg:flex-row justify-between">
+    <VendorCard>
+        <Fragment slot="card-title">
+            <h3 class="text-3xl mb-2 font-semibold">¿Por qué escogernos?</h3>
+        </Fragment>
+
+        <Fragment slot="card-1">
+            <ReasonMiniCard 
+                title="Diseños Personalizados y Únicos"
+                body="Cada mueble es confeccionado a medida, adaptándose a tus gustos y necesidades. Elegimos cuidadosamente materiales y acabados para garantizar exclusividad y funcionalidad."
+                >
+                <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                </svg>
+            </ReasonMiniCard>
+        </Fragment>
+
+        <Fragment slot="card-2">
+            <ReasonMiniCard 
+                title="Calidad y Durabilidad Garantizada"
+                body="Usamos materiales de alta calidad y técnicas artesanales para crear muebles resistentes y duraderos. Una inversión que mantiene su belleza y funcionalidad por años."
+                >
+                <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                </svg>
+            </ReasonMiniCard>
+        </Fragment>
+
+        <Fragment slot="card-3">
+            <ReasonMiniCard 
+                title="Restauración para Dar Nueva Vida a Tus Muebles"
+                body="Renovamos muebles antiguos o dañados, devolviéndoles su esencia y funcionalidad. Una opción más económica y ecológica que comprar nuevos."
+                >
+                <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                </svg>
+            </ReasonMiniCard>
+        </Fragment>
+
+        <Fragment slot="card-4">
+            <ReasonMiniCard 
+                title="Asesoramiento Personalizado"
+                body="Te guiamos en la elección de materiales, colores y diseños para que tu mueble se adapte a tu espacio, combinando estilo, armonía y funcionalidad."
+                >
+                <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+                </svg>
+            </ReasonMiniCard>
+        </Fragment>
+    </VendorCard>
+
+
+    <div class="max-w-md relative">
+        <SquareDots className="absolute -top-20 -left-20 size-60" color="#314158" />  
+        <Image 
+        class="rounded-lg z-10 relative"
+        width="593"
+        height="567"
+        src={MuebleSalaEspera} 
+        alt="Anunciando promocion imperdible" />
+    </div>
+</section>
+
+
+
+<!-- 
+1. Diseños Personalizados y Únicos
+Cada mueble es confeccionado a medida, adaptándose a tus gustos y necesidades. Elegimos cuidadosamente materiales y acabados para garantizar exclusividad y funcionalidad.
+
+2. Calidad y Durabilidad Garantizada
+Usamos materiales de alta calidad y técnicas artesanales para crear muebles resistentes y duraderos. Una inversión que mantiene su belleza y funcionalidad por años.
+
+3. Restauración para Dar Nueva Vida a Tus Muebles
+Renovamos muebles antiguos o dañados, devolviéndoles su esencia y funcionalidad. Una opción más económica y ecológica que comprar nuevos.
+
+4. Asesoramiento Personalizado
+Te guiamos en la elección de materiales, colores y diseños para que tu mueble se adapte a tu espacio, combinando estilo, armonía y funcionalidad.
+ -->

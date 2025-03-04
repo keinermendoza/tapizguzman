@@ -1,16 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import ProductGrid from '../components/ProductGrid.astro';
-import Timeline from '../components/Timeline.astro';	
-import Footer from '../components/Footer.astro';
-import VendorCard from '../components/VendorCard.astro';
+import Hero from '../components/sections/Hero.astro';
+import ProductGrid from '../components/sections/ProductGrid.astro';
+import Footer from '../components/sections/Footer.astro';
+import AboutService from '../components/sections/AboutService.astro';
+import RestaurationGrid from '../components/sections/RestaurationGrid.astro';
+import WhatsappCircle from '../components/WhatsappCircle.astro';
 ---
 
 <Layout>
+	<WhatsappCircle />
 	<Hero />
+	<AboutService />
+	<RestaurationGrid />
 	<ProductGrid />
-	<VendorCard />		
-	<Timeline />	
 	<Footer />	
 </Layout>

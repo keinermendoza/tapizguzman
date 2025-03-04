@@ -1,0 +1,15 @@
+---
+const {color, className} = Astro.props;
+---
+
+<div class={`square-dots ${className ? className : '' }`}></div>
+
+<style define:vars={{ color }}>
+    .square-dots {
+    --sizeDots: 4px;
+    --spaceDots: 2.5rem;
+
+    background-image: radial-gradient(var(--color) var(--sizeDots), transparent var(--sizeDots));
+    background-size: var(--spaceDots) var(--spaceDots);
+}
+</style>
