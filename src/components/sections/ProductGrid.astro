@@ -7,6 +7,9 @@ import CRojo from "../../assets/conjuntos/conjunto-rojo.png";
 import CamaGris from "../../assets/camas/cama-gris.png";
 import CamaVerde from "../../assets/camas/cama-verde.png";
 
+const camas = Object.values(import.meta.glob('../../pages/productos/camas/*.md', { eager: true }));
+const muebles = Object.values(import.meta.glob('../../pages/productos/muebles/*.md', { eager: true }));
+
 ---
 
 <section class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4 py-6 px-4 md:py-12 md:px-8 w-full mx-auto max-w-7xl">
@@ -15,18 +18,22 @@ import CamaVerde from "../../assets/camas/cama-verde.png";
         <p class="text-lg">Clientes satisfechos con nuestros productos de primera calidad</p>
     </div>
 
+    {
+    camas.map((cama: any) =>
+    
     <ProductCard
-        title="Diseño y Fabricación"
+        title={cama.frontmatter.title}
         price="$90"
         >
         <Fragment slot="image">
-            <Image 
-                src={CAmarillo}
-                alt="conjunto de muebles amarillos"
+            <img 
+                src={cama.frontmatter.image.url}
+                alt={cama.frontmatter.image.alt}
             />
         </Fragment>
     </ProductCard>   
-    <ProductCard
+    )}
+    <!-- <ProductCard
     title="Diseño y Fabricación"
     price="$90"
     >
@@ -69,7 +76,7 @@ import CamaVerde from "../../assets/camas/cama-verde.png";
                 alt="cama matrimonial verde"
             />
         </Fragment>
-    </ProductCard>   
+    </ProductCard>    -->
 </section>
 
 
