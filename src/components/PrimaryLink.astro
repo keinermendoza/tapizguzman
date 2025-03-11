@@ -1,7 +1,7 @@
 ---
 const {to, className} = Astro.props; 
 ---
-<a href={to} class={`button-primary ${className ? className : ''}`}><slot/></a>
+<a target="_blank" href={to} class={`button-primary ${className ? className : ''}`}><slot/></a>
 
 <style>
 /* CSS */
@@ -14,7 +14,6 @@ const {to, className} = Astro.props;
   border-radius: .65em;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
-  color: #fff;
   cursor: pointer;
   display: inline-flex;
   font-weight: 600;

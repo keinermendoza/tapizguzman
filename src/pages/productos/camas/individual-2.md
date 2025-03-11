@@ -2,7 +2,7 @@
 layout: ../../../layouts/ProductLayout.astro
 title: 'Cama individual'
 description: 'Fabricación de cama individual.'
-slug: '/products/camas/individual-2'
+slug: '/productos/camas/individual-2'
 pubDate: 2022-07-02
 image:
     url: '/images/webp/camas/individual-2.webp'

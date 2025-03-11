@@ -3,7 +3,7 @@ layout: ../../../layouts/ProductLayout.astro
 title: 'Cama matrimonial'
 pubDate: 2022-07-01
 description: 'Fabricación de cama matrimonial.'
-slug: '/products/camas/matrimonial-9'
+slug: '/productos/camas/matrimonial-9'
 
 image:
     url: '/images/webp/camas/matrimonial-9.webp'

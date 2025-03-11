@@ -2,7 +2,7 @@
 layout: ../../../layouts/ProductLayout.astro
 title: 'Cama infantil'
 description: 'Fabricación de cama infantil.'
-slug: '/products/camas/infantil-2'
+slug: '/productos/camas/infantil-2'
 pubDate: 2022-07-02
 image:
     url: '/images/webp/camas/infantil-2.webp'

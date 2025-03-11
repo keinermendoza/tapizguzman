@@ -4,7 +4,7 @@ title: 'Cama matrimonial'
 description: 'Fabricación de cama matrimonial.'
 pubDate: 2022-07-01
 author: 'Astro Learner'
-slug: '/products/camas/matrimonial-3'
+slug: '/productos/camas/matrimonial-3'
 
 image:
     url: '/images/webp/camas/matrimonial-3.webp'

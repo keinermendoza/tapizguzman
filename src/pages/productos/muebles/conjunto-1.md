@@ -1,12 +1,12 @@
 ---
 layout: ../../../layouts/ProductLayout.astro
-title: 'Cama individual'
-description: 'Fabricación de cama individual.'
-slug: '/products/camas/individual-1'
+title: 'Conjunto de muebles'
+description: 'Fabricación de conjunto de muebles.'
+slug: '/productos/muebles/conjunto-1'
 pubDate: 2022-07-01
 image:
-    url: '/images/webp/camas/individual-1.webp'
+    url: '/images/png/muebles/conjunto-1.png'
     alt: 'The Astro logo on a dark background with a pink glow.'
-    metaurl: '/images/jpeg/camas/individual-1.jpeg'
+    metaurl: '/images/png/muebles/conjunto-1.png'
 tags: ["astro", "blogging", "learning in public"]
 ---
