@@ -1,7 +1,7 @@
 ---
 const {to, className} = Astro.props; 
 ---
-<a href={to} class={`button-primary text-xl ${className ? className : ''}`}><slot/></a>
+<a href={to} class={`button-primary ${className ? className : ''}`}><slot/></a>
 
 <style>
 /* CSS */
@@ -11,7 +11,7 @@ const {to, className} = Astro.props;
   background-clip: padding-box;
   background-color: hsl(44, 100%, 47%);
   border: 1px solid transparent;
-  border-radius: .65rem;
+  border-radius: .65em;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
   color: #fff;
@@ -19,7 +19,7 @@ const {to, className} = Astro.props;
   display: inline-flex;
   font-weight: 600;
   justify-content: center;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: calc(.875em - 1px) calc(1.5em - 1px);
   position: relative;
   text-decoration: none;
   transition: all 250ms;

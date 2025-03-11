@@ -1,8 +1,10 @@
 ---
 layout: ../../../layouts/ProductLayout.astro
-title: 'My First Blog Post'
+title: 'Cama matrimonial'
+description: 'Fabricación de cama matrimonial.'
 pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
+slug: '/products/camas/matrimonial-2'
+
 author: 'Astro Learner'
 image:
     url: '/images/webp/camas/matrimonial-2.webp'

@@ -1,14 +1,25 @@
 ---
-const {title, price } = Astro.props;
+const {title, price, slug, isBed = true} = Astro.props;
+const number = "593978882460";
+const domain = "https://furniture-specialist.vercel.app"
+const productUrl = domain + slug; 
+const sufixMessage = isBed ? "esta cama" : "este mueble"; 
+const message = `Hola, estuve viendo su sitio web y me gustaría encargar ${sufixMessage} ${productUrl}`;
+const encodedMessage = encodeURIComponent(message);
+const whatsappLink = `https://wa.me/${number}?text=${encodedMessage}`;
 ---
 
 <div class="relative overflow-hidden p-4 shadow-md w-full bg-white  rounded-xl dark:bg-gray-800 dark:border-gray-700">
     <div class="absolute h-2/3 bg-gradient-to-b  to-slate-300 bottom-0 w-full left-0"></div>
     <div class="h-full flex flex-col justify-between z-10 relative">
-        <slot name="image" />
-        <div class="px-5 pb-5 text-center">
-            <h5 class="mt-6 mb-3  dark:text-white">{title}</h5>
-            <p class="text-3xl font-semibold  dark:text-white">{price}</p>
+        <div class="h-2/3">
+            <slot name="image" />
         </div>
+        <a target="_blank" href={whatsappLink} aria-describedby="tier-enterprise" class="mt-8 flex items-center justify-center gap-3 rounded-md bg-yellow-500 px-3.5 py-2.5 text-center text-sm font-semibold  shadow-xs hover:bg-yellow-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500 sm:mt-10">
+            <svg class="size-5" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.0574 5.29531C24.971 2.20156 20.8607 0.5 16.4926 0.5C7.47656 0.5 0.139955 7.83661 0.139955 16.8527C0.139955 19.7328 0.891295 22.5467 2.32031 25.029L0 33.5L8.66987 31.2239C11.0565 32.5277 13.7451 33.2127 16.4853 33.2127H16.4926C25.5013 33.2127 33 25.8761 33 16.86C33 12.492 31.1437 8.38906 28.0574 5.29531ZM16.4926 30.4578C14.0471 30.4578 11.6531 29.8022 9.56853 28.5647L9.075 28.2701L3.93348 29.6181L5.30357 24.6018L4.97946 24.0862C3.61674 21.9205 2.90223 19.4234 2.90223 16.8527C2.90223 9.36138 9.00134 3.26228 16.5 3.26228C20.1315 3.26228 23.542 4.67656 26.1054 7.24732C28.6687 9.81808 30.2451 13.2286 30.2377 16.86C30.2377 24.3587 23.9839 30.4578 16.4926 30.4578ZM23.9471 20.2779C23.542 20.0717 21.531 19.0846 21.1554 18.952C20.7797 18.8121 20.5071 18.7458 20.2346 19.1583C19.9621 19.5708 19.1813 20.4842 18.9382 20.7641C18.7025 21.0366 18.4594 21.0734 18.0542 20.8672C15.6529 19.6665 14.0766 18.7237 12.4929 16.0056C12.073 15.2837 12.9127 15.3353 13.6935 13.7737C13.8261 13.5011 13.7598 13.2654 13.6567 13.0592C13.5536 12.8529 12.7359 10.842 12.3971 10.0243C12.0656 9.22879 11.7268 9.33929 11.4763 9.32455C11.2406 9.30982 10.9681 9.30982 10.6955 9.30982C10.423 9.30982 9.98103 9.41295 9.60536 9.81808C9.22969 10.2306 8.17634 11.2176 8.17634 13.2286C8.17634 15.2395 9.64219 17.1842 9.84107 17.4567C10.0473 17.7292 12.7212 21.8542 16.8241 23.6295C19.417 24.7491 20.4335 24.8449 21.7299 24.6533C22.5181 24.5355 24.146 23.6663 24.4848 22.7087C24.8237 21.7511 24.8237 20.9335 24.7205 20.7641C24.6248 20.5799 24.3522 20.4768 23.9471 20.2779Z" fill="CurrentColor"/>
+          </svg>
+            Encargar
+          </a>
     </div>
 </div>

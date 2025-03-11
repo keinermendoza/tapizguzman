@@ -1,15 +1,13 @@
 ---
 layout: ../../../layouts/ProductLayout.astro
 title: 'Cama matrimonial'
-description: 'Fabricación de cama matrimonial.'
 pubDate: 2022-07-01
-author: 'Astro Learner'
-slug: '/products/camas/matrimonial-3'
+description: 'Fabricación de cama matrimonial.'
+slug: '/products/camas/matrimonial-7'
 
 image:
-    url: '/images/webp/camas/matrimonial-3.webp'
+    url: '/images/webp/camas/matrimonial-7.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
-    metaurl: '/images/jpeg/camas/matrimonial-2.jpeg'
-
+    metaurl: '/images/jpeg/camas/matrimonial-7.jpeg'
 tags: ["astro", "blogging", "learning in public"]
 ---
