@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+const domain = Astro.site;
 ---
 
 <!doctype html>
@@ -20,11 +21,11 @@ import "../styles/global.css";
 		<meta name="title" content="Tapiz Guzman">
 		<meta name="description" content="Expertos en la Fabricación y Restauración de Muebles">
 
-		<meta property="og:image" content="https://tapizguzman.vercel.app/images/jpeg/meta-image.jpg" />
-		<meta property="og:title" content="Tapiz Guzman">
-		<meta property="og:description" content="Expertos en la Fabricación y Restauración de Muebles">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://tapizguzman.vercel.app">
+		<meta property="og:image" content=`${domain}/images/jpeg/meta-image.jpg` />
+		<meta property="og:title" content="Tapiz Guzman" />
+		<meta property="og:description" content="Expertos en la Fabricación y Restauración de Muebles" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={domain} />
 		<title>Tapiz Guzman</title>
 	</head>
 	<body class="text-gray-900">

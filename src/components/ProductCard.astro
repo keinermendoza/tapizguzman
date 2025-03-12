@@ -1,7 +1,7 @@
 ---
 const {title, price, slug, isBed = true} = Astro.props;
+const domain = Astro.site;
 const number = "593978882460";
-const domain = "https://furniture-specialist.vercel.app"
 const productUrl = domain + slug; 
 const sufixMessage = isBed ? "esta cama" : "este mueble"; 
 const message = `Hola, estuve viendo su sitio web y me gustaría encargar ${sufixMessage} ${productUrl}`;
