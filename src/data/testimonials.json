@@ -1,0 +1,42 @@
+[
+    {
+        "username": "Pablo Hernandez",
+        "image": "/images/jpeg/users/pablo_hernandez.jpg",
+        "message": "100% recomendado! entregan en los plazos y la cama es justo como la queríamos"
+    },
+    {
+        "username": "Maria Villanueva",
+        "image": "/images/jpeg/users/maria_villanueva.jpg",
+        "message": "Tenía años queriendo restaurar la silla de la abuela, muchas gracias a Francisco y su equipo por ayudarme a mantenerla en la familia"
+    },
+    {
+        "username": "Carlos Aliaga",
+        "image": "/images/jpeg/users/carlos_aliaga.jpg",
+        "message": "Buen precio, hasta ahora los muebles se han mantenido en buen estado."
+    },
+    {
+        "username": "Yanitza Castillo",
+        "image": "/images/jpeg/users/yanitza_castillo.jpg",
+        "message": "Yo estoy muy feliz con la cama que le hicieron a mi hija, se los recomiendo a todos."
+    },
+    {
+        "username": "Ricardo Méndez",
+        "image": "/images/jpeg/users/ricardo_mendez.jpg",
+        "message": "Increíble atención y calidad. Volveré a comprar sin dudarlo."
+    },
+    {
+        "username": "Sofía Ramírez",
+        "image": "/images/jpeg/users/sofia_ramirez.jpg",
+        "message": "El sofá quedó hermoso, justo como lo imaginé. Mil gracias!"
+    },
+    {
+        "username": "Andrés Torres",
+        "image": "/images/jpeg/users/andres_torres.jpg",
+        "message": "Se nota el trabajo artesanal y el cuidado en los detalles. Excelente servicio."
+    },
+    {
+        "username": "Luciana Ortega",
+        "image": "/images/jpeg/users/luciana_ortega.jpg",
+        "message": "Encantada con la mesa de comedor, es preciosa y de excelente calidad."
+    }
+]

@@ -1,0 +1,142 @@
+---
+import TestimonialCard from "@components/TestimonialCard.astro"
+import testimonials from "@data/testimonials.json"
+---
+<section class="w-full py-6 px-4 md:py-12 md:px-8 mx-auto max-w-7xl ">
+    <h2 class="text-3xl mb-8 lg:text-5xl text-center font-semibold">Lo que opinan nuestros clientes</h2>
+    
+    <div class="testimonial-grid">
+        {testimonials.map(testimonial => (
+            <TestimonialCard 
+                imageSrc={testimonial.image}
+                username={testimonial.username}
+            >{testimonial.message}</TestimonialCard> 
+        ))
+        }
+    </div>
+
+</section>
+
+<style is:global>
+    @reference "tailwindcss";
+    .testimonial-grid {
+        display: grid;
+        gap: 1rem;
+    }
+    .testimonial-grid .testimonial-card:nth-child(even) {
+        @apply bg-amber-100;
+    }
+    .testimonial-grid .testimonial-card:nth-child(odd) {
+        @apply bg-emerald-100;
+    }
+   
+    @media (min-width:40rem) {
+        .testimonial-grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+        }
+          
+        .testimonial-grid .testimonial-card:nth-child(1) {
+            grid-row: span 2 / span 2;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(2) {
+            grid-row: span 2 / span 2;
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(3) {
+            grid-row: span 2 / span 2;
+            grid-row-start: 3;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(4) {
+            grid-row: span 2 / span 2;
+            grid-column-start: 2;
+            grid-row-start: 4;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(5) {
+            grid-row: span 2 / span 2;
+            grid-row-start: 5;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(6) {
+            grid-row: span 2 / span 2;
+            grid-column-start: 2;
+            grid-row-start: 6;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(7) {
+            grid-row: span 2 / span 2;
+            grid-row-start: 7;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(8) {
+            grid-row: span 2 / span 2;
+            grid-column-start: 2;
+            grid-row-start: 8;
+        }
+    }
+
+    @media (min-width:64rem) {
+
+        .testimonial-grid {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+            
+        .testimonial-grid .testimonial-card:nth-child(1) {
+            grid-column: span 2 / span 2;
+            grid-row: span 2 / span 2;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(2) {
+            grid-column: span 2 / span 2;
+            grid-row: span 2 / span 2;
+            grid-column-start: 3;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(3) {
+            grid-column: span 2 / span 2;
+            grid-row: span 2 / span 2;
+            grid-column-start: 5;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(4) {
+            grid-column: span 2 / span 2;
+            grid-row: span 2 / span 2;
+            grid-row-start: 3;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(5) {
+            grid-column: span 2 / span 2;
+            grid-row: span 2 / span 2;
+            grid-column-start: 3;
+            grid-row-start: 3;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(6) {
+            grid-column: span 2 / span 2;
+            grid-row: span 2 / span 2;
+            grid-column-start: 5;
+            grid-row-start: 3;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(7) {
+            grid-column: span 3 / span 3;
+            grid-row: span 2 / span 2;
+            grid-row-start: 5;
+        }
+
+        .testimonial-grid .testimonial-card:nth-child(8) {
+            grid-column: span 3 / span 3;
+            grid-row: span 2 / span 2;
+            grid-column-start: 4;
+            grid-row-start: 5;
+        }
+                
+    }
+
+</style>
