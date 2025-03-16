@@ -26,6 +26,16 @@ const domain = Astro.site;
 		<meta property="og:description" content="Expertos en la Fabricación y Restauración de Muebles" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={domain} />
+
+		<!-- Google tag (gtag.js) -->
+		<script is:inline src="https://www.googletagmanager.com/gtag/js?id=G-VH8ZN6Q70H"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-VH8ZN6Q70H');
+			</script>
 		<title>Tapiz Guzman</title>
 	</head>
 	<body class="text-gray-900">
